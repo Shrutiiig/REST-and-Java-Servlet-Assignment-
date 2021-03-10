@@ -1,0 +1,417 @@
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Mar-2021 20:08:53.454 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.63
+09-Mar-2021 20:08:53.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 29 2021 11:21:49 UTC
+09-Mar-2021 20:08:53.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.63.0
+09-Mar-2021 20:08:53.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+09-Mar-2021 20:08:53.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-66-generic
+09-Mar-2021 20:08:53.467 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+09-Mar-2021 20:08:53.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+09-Mar-2021 20:08:53.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.10+9-Ubuntu-0ubuntu1.20.04
+09-Mar-2021 20:08:53.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+09-Mar-2021 20:08:53.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 20:08:53.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 20:08:53.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-Mar-2021 20:08:53.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-Mar-2021 20:08:53.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+09-Mar-2021 20:08:53.470 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+09-Mar-2021 20:08:53.470 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Mar-2021 20:08:53.470 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/conf/logging.properties
+09-Mar-2021 20:08:53.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Mar-2021 20:08:53.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-Mar-2021 20:08:53.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+09-Mar-2021 20:08:53.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+09-Mar-2021 20:08:53.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+09-Mar-2021 20:08:53.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 20:08:53.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 20:08:53.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/temp
+09-Mar-2021 20:08:53.474 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+09-Mar-2021 20:08:53.550 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+09-Mar-2021 20:08:53.622 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1077)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:552)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:846)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:639)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:455)
+		at java.base/sun.nio.ch.Net.bind(Net.java:447)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1143)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:222)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:599)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1075)
+		... 13 more
+09-Mar-2021 20:08:53.624 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1202 ms
+09-Mar-2021 20:08:53.736 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-Mar-2021 20:08:53.736 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.63
+09-Mar-2021 20:08:53.757 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/manager]
+09-Mar-2021 20:08:54.511 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/manager] has finished in [751] ms
+09-Mar-2021 20:08:54.512 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/examples]
+09-Mar-2021 20:08:55.128 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/examples] has finished in [615] ms
+09-Mar-2021 20:08:55.128 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/docs]
+09-Mar-2021 20:08:55.169 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/docs] has finished in [41] ms
+09-Mar-2021 20:08:55.170 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/ROOT]
+09-Mar-2021 20:08:55.208 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/ROOT] has finished in [38] ms
+09-Mar-2021 20:08:55.208 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/host-manager]
+09-Mar-2021 20:08:55.279 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/host-manager] has finished in [71] ms
+09-Mar-2021 20:08:55.301 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1676 ms
+09-Mar-2021 20:08:55.306 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:421)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:776)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:722)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+09-Mar-2021 20:08:55.308 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+09-Mar-2021 20:08:55.308 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+09-Mar-2021 20:08:55.460 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+09-Mar-2021 20:08:55.462 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Mar-2021 20:30:23.183 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.63
+09-Mar-2021 20:30:23.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 29 2021 11:21:49 UTC
+09-Mar-2021 20:30:23.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.63.0
+09-Mar-2021 20:30:23.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+09-Mar-2021 20:30:23.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-66-generic
+09-Mar-2021 20:30:23.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+09-Mar-2021 20:30:23.200 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+09-Mar-2021 20:30:23.200 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.10+9-Ubuntu-0ubuntu1.20.04
+09-Mar-2021 20:30:23.200 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+09-Mar-2021 20:30:23.200 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 20:30:23.201 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 20:30:23.201 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-Mar-2021 20:30:23.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-Mar-2021 20:30:23.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+09-Mar-2021 20:30:23.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+09-Mar-2021 20:30:23.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Mar-2021 20:30:23.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/conf/logging.properties
+09-Mar-2021 20:30:23.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Mar-2021 20:30:23.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-Mar-2021 20:30:23.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+09-Mar-2021 20:30:23.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+09-Mar-2021 20:30:23.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+09-Mar-2021 20:30:23.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 20:30:23.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 20:30:23.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/temp
+09-Mar-2021 20:30:23.205 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+09-Mar-2021 20:30:23.279 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+09-Mar-2021 20:30:23.307 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1077)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:552)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:846)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:639)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:455)
+		at java.base/sun.nio.ch.Net.bind(Net.java:447)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1143)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:222)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:599)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1075)
+		... 13 more
+09-Mar-2021 20:30:23.311 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1138 ms
+09-Mar-2021 20:30:23.420 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-Mar-2021 20:30:23.420 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.63
+09-Mar-2021 20:30:23.454 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/Assignment.war]
+09-Mar-2021 20:30:24.169 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09-Mar-2021 20:30:24.238 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/Assignment.war] has finished in [784] ms
+09-Mar-2021 20:30:24.240 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/manager]
+09-Mar-2021 20:30:24.325 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/manager] has finished in [84] ms
+09-Mar-2021 20:30:24.325 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/examples]
+09-Mar-2021 20:30:24.774 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/examples] has finished in [449] ms
+09-Mar-2021 20:30:24.774 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/docs]
+09-Mar-2021 20:30:24.807 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/docs] has finished in [33] ms
+09-Mar-2021 20:30:24.808 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/ROOT]
+09-Mar-2021 20:30:24.843 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/ROOT] has finished in [35] ms
+09-Mar-2021 20:30:24.843 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/host-manager]
+09-Mar-2021 20:30:24.881 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/host-manager] has finished in [38] ms
+09-Mar-2021 20:30:24.888 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1576 ms
+09-Mar-2021 20:30:24.893 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:421)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:776)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:722)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+09-Mar-2021 20:30:24.893 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+09-Mar-2021 20:30:24.894 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+09-Mar-2021 20:30:24.945 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+09-Mar-2021 20:30:24.947 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Mar-2021 20:31:00.298 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.63
+09-Mar-2021 20:31:00.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 29 2021 11:21:49 UTC
+09-Mar-2021 20:31:00.307 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.63.0
+09-Mar-2021 20:31:00.307 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+09-Mar-2021 20:31:00.307 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-66-generic
+09-Mar-2021 20:31:00.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+09-Mar-2021 20:31:00.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+09-Mar-2021 20:31:00.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.10+9-Ubuntu-0ubuntu1.20.04
+09-Mar-2021 20:31:00.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+09-Mar-2021 20:31:00.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 20:31:00.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 20:31:00.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-Mar-2021 20:31:00.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-Mar-2021 20:31:00.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+09-Mar-2021 20:31:00.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+09-Mar-2021 20:31:00.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Mar-2021 20:31:00.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/conf/logging.properties
+09-Mar-2021 20:31:00.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Mar-2021 20:31:00.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-Mar-2021 20:31:00.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+09-Mar-2021 20:31:00.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+09-Mar-2021 20:31:00.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+09-Mar-2021 20:31:00.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 20:31:00.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 20:31:00.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/temp
+09-Mar-2021 20:31:00.317 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+09-Mar-2021 20:31:00.388 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+09-Mar-2021 20:31:00.416 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1077)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:552)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:846)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:639)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:455)
+		at java.base/sun.nio.ch.Net.bind(Net.java:447)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1143)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:222)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:599)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1075)
+		... 13 more
+09-Mar-2021 20:31:00.418 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1261 ms
+09-Mar-2021 20:31:00.526 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-Mar-2021 20:31:00.526 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.63
+09-Mar-2021 20:31:00.561 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/Assignment.war]
+09-Mar-2021 20:31:01.323 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09-Mar-2021 20:31:01.388 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/Assignment.war] has finished in [827] ms
+09-Mar-2021 20:31:01.389 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/manager]
+09-Mar-2021 20:31:01.467 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/manager] has finished in [78] ms
+09-Mar-2021 20:31:01.467 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/examples]
+09-Mar-2021 20:31:01.903 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/examples] has finished in [435] ms
+09-Mar-2021 20:31:01.903 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/docs]
+09-Mar-2021 20:31:01.940 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/docs] has finished in [37] ms
+09-Mar-2021 20:31:01.940 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/ROOT]
+09-Mar-2021 20:31:01.977 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/ROOT] has finished in [37] ms
+09-Mar-2021 20:31:01.978 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/host-manager]
+09-Mar-2021 20:31:02.019 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/host-manager] has finished in [42] ms
+09-Mar-2021 20:31:02.027 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1607 ms
+09-Mar-2021 20:31:02.032 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:421)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:776)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:722)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+09-Mar-2021 20:31:02.033 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+09-Mar-2021 20:31:02.033 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+09-Mar-2021 20:31:02.089 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+09-Mar-2021 20:31:02.091 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Mar-2021 22:35:03.752 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.63
+09-Mar-2021 22:35:03.763 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 29 2021 11:21:49 UTC
+09-Mar-2021 22:35:03.763 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.63.0
+09-Mar-2021 22:35:03.764 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+09-Mar-2021 22:35:03.765 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-66-generic
+09-Mar-2021 22:35:03.766 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+09-Mar-2021 22:35:03.766 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+09-Mar-2021 22:35:03.766 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.10+9-Ubuntu-0ubuntu1.20.04
+09-Mar-2021 22:35:03.766 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+09-Mar-2021 22:35:03.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 22:35:03.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 22:35:03.768 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-Mar-2021 22:35:03.768 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-Mar-2021 22:35:03.771 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+09-Mar-2021 22:35:03.771 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+09-Mar-2021 22:35:03.771 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Mar-2021 22:35:03.771 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/conf/logging.properties
+09-Mar-2021 22:35:03.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Mar-2021 22:35:03.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-Mar-2021 22:35:03.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+09-Mar-2021 22:35:03.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+09-Mar-2021 22:35:03.773 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+09-Mar-2021 22:35:03.773 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 22:35:03.773 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 22:35:03.773 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/temp
+09-Mar-2021 22:35:03.774 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+09-Mar-2021 22:35:03.851 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+09-Mar-2021 22:35:03.880 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+09-Mar-2021 22:35:03.910 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1168 ms
+09-Mar-2021 22:35:04.023 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-Mar-2021 22:35:04.023 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.63
+09-Mar-2021 22:35:04.064 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/Assignment.war]
+09-Mar-2021 22:35:04.109 INFO [localhost-startStop-1] org.apache.catalina.startup.ExpandWar.expand An expanded directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/Assignment] was found with a last modified time that did not match the associated WAR. It will be deleted.
+09-Mar-2021 22:35:04.876 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09-Mar-2021 22:35:04.939 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/Assignment.war] has finished in [875] ms
+09-Mar-2021 22:35:04.941 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/manager]
+09-Mar-2021 22:35:05.022 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/manager] has finished in [81] ms
+09-Mar-2021 22:35:05.023 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/examples]
+09-Mar-2021 22:35:05.448 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/examples] has finished in [424] ms
+09-Mar-2021 22:35:05.448 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/docs]
+09-Mar-2021 22:35:05.485 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/docs] has finished in [37] ms
+09-Mar-2021 22:35:05.486 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/ROOT]
+09-Mar-2021 22:35:05.520 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/ROOT] has finished in [34] ms
+09-Mar-2021 22:35:05.520 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/host-manager]
+09-Mar-2021 22:35:05.559 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/host-manager] has finished in [39] ms
+09-Mar-2021 22:35:05.568 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+09-Mar-2021 22:35:05.596 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1684 ms
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Mar-2021 22:43:15.252 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.63
+09-Mar-2021 22:43:15.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 29 2021 11:21:49 UTC
+09-Mar-2021 22:43:15.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.63.0
+09-Mar-2021 22:43:15.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+09-Mar-2021 22:43:15.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-66-generic
+09-Mar-2021 22:43:15.277 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+09-Mar-2021 22:43:15.277 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+09-Mar-2021 22:43:15.277 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.10+9-Ubuntu-0ubuntu1.20.04
+09-Mar-2021 22:43:15.277 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+09-Mar-2021 22:43:15.277 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 22:43:15.278 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 22:43:15.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-Mar-2021 22:43:15.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-Mar-2021 22:43:15.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+09-Mar-2021 22:43:15.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+09-Mar-2021 22:43:15.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Mar-2021 22:43:15.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/conf/logging.properties
+09-Mar-2021 22:43:15.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Mar-2021 22:43:15.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-Mar-2021 22:43:15.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+09-Mar-2021 22:43:15.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+09-Mar-2021 22:43:15.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+09-Mar-2021 22:43:15.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 22:43:15.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63
+09-Mar-2021 22:43:15.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/temp
+09-Mar-2021 22:43:15.286 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+09-Mar-2021 22:43:15.353 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+09-Mar-2021 22:43:15.379 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1077)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:552)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:846)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:639)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:455)
+		at java.base/sun.nio.ch.Net.bind(Net.java:447)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1143)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:222)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:599)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1075)
+		... 13 more
+09-Mar-2021 22:43:15.382 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1133 ms
+09-Mar-2021 22:43:15.488 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-Mar-2021 22:43:15.488 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.63
+09-Mar-2021 22:43:15.526 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/Assignment.war]
+09-Mar-2021 22:43:16.321 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09-Mar-2021 22:43:16.386 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/Assignment.war] has finished in [859] ms
+09-Mar-2021 22:43:16.388 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/manager]
+09-Mar-2021 22:43:16.474 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/manager] has finished in [86] ms
+09-Mar-2021 22:43:16.474 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/examples]
+09-Mar-2021 22:43:16.824 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/examples] has finished in [350] ms
+09-Mar-2021 22:43:16.825 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/docs]
+09-Mar-2021 22:43:16.863 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/docs] has finished in [39] ms
+09-Mar-2021 22:43:16.864 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/ROOT]
+09-Mar-2021 22:43:16.900 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/ROOT] has finished in [35] ms
+09-Mar-2021 22:43:16.900 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/host-manager]
+09-Mar-2021 22:43:16.943 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ttn/Desktop/TTN Bootcamp/Aem Assignments/3. Rest & Servlet/apache-tomcat-8.5.63/webapps/host-manager] has finished in [43] ms
+09-Mar-2021 22:43:16.951 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1568 ms
+09-Mar-2021 22:43:16.955 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:421)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:776)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:722)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+09-Mar-2021 22:43:16.956 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+09-Mar-2021 22:43:16.957 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+09-Mar-2021 22:43:17.010 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+09-Mar-2021 22:43:17.012 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
